@@ -1,8 +1,8 @@
 package edu.handong.csee.lab13.prob2;
 
-public class History extends Book {
+public class History extends Book { // history inherits Book 
 	
-	private String author;
+	private String author; 
 
 	public History(String name, String author) {
 		super(name);

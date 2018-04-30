@@ -1,8 +1,8 @@
 package edu.handong.csee.lab13.prob2;
 
-public class Book {
-	private static int idcount=0;
-	String name;
+public class Book { // highest class
+	private static int idcount=0; // used to increase the id count
+	private String name; // 
 	private int id;
 	
 	public Book(String name) {
