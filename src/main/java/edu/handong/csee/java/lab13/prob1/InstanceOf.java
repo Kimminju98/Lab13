@@ -2,7 +2,7 @@ package edu.handong.csee.java.lab13.prob1;
 
 public class InstanceOf {
 
-	public static void whatFriend(Friend friend) {
+	public static void whatFriend(Friend friend) { // parameter is Friend class's reference
 		
 		if(friend instanceof ClassFriend) { // if friend's instance is ClassFriend
 			((ClassFriend)friend).classFriend();  // call ClassFriend's classFriend method
@@ -15,12 +15,12 @@ public class InstanceOf {
 		}
 	}
 	public static void main(String[]args) {
-		Friend friend1 = new Friend();
-		SchoolFriend friend2 = new SchoolFriend();
-		ClassFriend friend3 = new ClassFriend();
+		Friend friend1 = new Friend(); // instantiate Friend class
+		SchoolFriend friend2 = new SchoolFriend(); // instantiate SchoolFriend class
+		ClassFriend friend3 = new ClassFriend(); // instantiate ClassFriend class
 		
-		InstanceOf.whatFriend(friend1);
-		InstanceOf.whatFriend(friend2);
-		InstanceOf.whatFriend(friend3);
+		InstanceOf.whatFriend(friend1); //give friend1 reference to whatFriend method of InstanceOf class 
+		InstanceOf.whatFriend(friend2); //give friend2 reference to whatFriend method of InstanceOf class 
+		InstanceOf.whatFriend(friend3); //give friend3 reference to whatFriend method of InstanceOf class 
 	}
 }
